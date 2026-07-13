@@ -16,7 +16,7 @@ Just kidding :⁠-⁠)-->
                 font-family:"JetBrains Mono", monospace;
                 font-size:small;
             }
-            .info1 h1, h1{
+            h1{
                 text-align:center;
                 font-weight:400;
                 width: 340px;
@@ -32,8 +32,30 @@ Just kidding :⁠-⁠)-->
                 border:2px solid #00C853;
                 padding:10px;
             }
+            .cursor{
+                animation-name:blink;
+                animation-duration:1s;
+                animation-iteration-count:infinite;
+            }
+            @keyframes blink{
+                0%{
+                    opacity: 1;
+                }
+                50%{
+                    opacity: 0;
+                }
+                100%{
+                    opacity:1;
+                }
+            }
             a{
                 color:#00C853;
+                display:block;
+                transition: transform 0.2s;
+            }
+            a:hover{
+                text-decoration:none;
+                transform:scale(1.05);
             }
             p{
                margin-bottom:5px;           
@@ -60,6 +82,9 @@ Just kidding :⁠-⁠)-->
             .intro{
                 font-size:16px;
             }
+            ul{
+                list-style-type:square;
+            }
         </style>
     </head>
     <body>
@@ -68,11 +93,11 @@ Just kidding :⁠-⁠)-->
 Command Prompt - Portfolio.exe<span class="cursor">█</span>
 </p>
         <nav>
-          ><a href="#about">About </a><br>
-          ><a href="#skills">Skills </a><br>
-          ><a href="#projects">Projects </a><br>
-          ><a href="#other">Others </a><br>
-          ><a href="#connect">Connect </a>  
+          <a href="#about">>About </a>
+          <a href="#skills">>Skills </a>
+          <a href="#projects">>Projects </a>
+          <a href="#other">>Others </a>
+          <a href="#connect">>Connect </a>  
         </nav>
         <div class="info1" id="about">
             <p>C:\Users\Muhammad> about</p>
@@ -108,7 +133,7 @@ Command Prompt - Portfolio.exe<span class="cursor">█</span>
             <p>C:\Users\Muhammad> other achievements </p>
             <h1> Others </h1>
             <ul> 
-                <li>Leetcode problems solved: 100<p>Current goal: 200</p> <progress max="200" value="100"></progress> 50%% </li>
+                <li>Leetcode problems solved: 108<p>Current goal: 200</p> <progress max="200" value="108"></progress> 54% </li>
             </ul>
         </div>
         <div id="connect">
